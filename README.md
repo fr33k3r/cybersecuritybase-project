@@ -20,10 +20,10 @@ Issue: Stored XSS Attack
 Steps to reproduce: 
 1. Open link localhost:8081/posts 
 2. Go to New Post and choose a Name of your choice such as "Jim" 
-3. Put <script>alert(document.cookie);</script> for Post content 
-4. Press "Submit Post".
+3. Put \<script>alert(document.cookie);\</script> for Post content
+4. Press "Submit Post"
 5. Congratulations. You have successfully completed this attack.
 
-When the site reloads, your (or anyone else's who visits the site) you will be greeted with a pop-up, which shows that we were able to make the browser execute our JavaScript code. 
+When the site reloads, you will be greeted with a pop-up, which shows that we were able to make the browser execute our JavaScript code. 
 The solution to this would be to sanitize the input and not let special characters be executed like the <script> command. We could replace the thymeleaf directive "th:utext" with "th:text". That would make thymeleaf recognize it as plain text. 
 

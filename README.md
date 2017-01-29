@@ -28,6 +28,7 @@ Steps to reproduce:
 When the site reloads, you will be greeted with a couple of pop-ups, which shows that we were able to make the browser execute our JavaScript code. 
 The solution to this would be to sanitize the input and not let special characters be executed like the <script> command. We could replace the thymeleaf directive "th:utext" with "th:text". That would make thymeleaf recognize it as plain text. 
 
+
 Second flaw : SQL Injection 
 ============================
 

@@ -15,7 +15,7 @@ As a final note, I do intend to use bootstrap in the future and make it more use
 
 
 First flaw : Cross-Site Scripting (XSS)
-======================================
+
 
 Issue: Stored XSS Attack 
 Steps to reproduce: 
@@ -30,7 +30,7 @@ The solution to this would be to sanitize the input and not let special characte
 
 
 Second flaw : SQL Injection 
-============================
+
 
 Issue: SQL Injection Steps to reproduce: 
 Steps to reproduce:
